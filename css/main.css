@@ -56,6 +56,7 @@ body {
 .search__form {
     gap: 8px;
     padding: 10px;
+    margin-left: auto;
 }
 
 .search__input:focus {
@@ -113,6 +114,7 @@ body {
     display: flex;
     gap: 64px;
     justify-content: space-between;
+    margin-left: auto;
 }
 
 .footer-section__header {

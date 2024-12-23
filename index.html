@@ -39,16 +39,18 @@
     </header>
     <main class="content">
         <section class="banner">
-            <h1 class="banner__header">Craft Your Success with Our <span class="banner__span">Digital</span> Assets</h1>
-            <p class="banner__text">From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources</p>
-            <ul class="banner__list">
-                <li class="banner__shop-now">
-                    <button class="shop-now" type="button">Shop Now</button>
-                </li>
-                <li class="banner__watch">
-                    <button class="watch" type="button">Watch About Us</button>
-                </li>
-            </ul>
+            <div class="banner-content">
+                <h1 class="banner__header">Craft Your Success with Our <span class="banner__span">Digital</span> Assets</h1>
+                <p class="banner__text">From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources</p>
+                <ul class="banner__list">
+                    <li class="banner__shop-now">
+                        <button class="shop-now" type="button">Shop Now</button>
+                    </li>
+                    <li class="banner__watch">
+                        <button class="watch" type="button">Watch About Us</button>
+                    </li>
+                </ul>
+            </div>
             <div class="banner-img">
                 <img src="/img/ultimate-platform-banner.webp" alt="The Ultimate Platform for Planning and Promotions Successful Events" class="banner-img__top" width="281" height="422">
                 <img src="/img/jenna-smith-banner.webp" alt="Jenna Smith - Business Strategy and Innovation, Bussiness and Leadership" class="banner-img__right" width="291" height="164">
@@ -83,35 +85,47 @@
             <div class="categories-boxes">
                 <div class="left-categories-boxes">
                     <div class="box">
+                        <svg class="box__icon" width="48" height="48">
+                            <use href="/img/icons/sprite.svg#pc-icon"></use>
+                        </svg>
                         <h2 class="box__header">Templates</h2>
                         <div class="box__description">
                             <p class="box__text">For all needs</p>
-                            <p class="box__text">Modern</p>
+                            <p class="box__text-small">Modern</p>
                         </div>
                     </div>
                     <div class="box">
+                        <svg class="box__icon" width="48" height="48">
+                            <use href="/img/icons/sprite.svg#graf-icon"></use>
+                        </svg>
                         <h2 class="box__header">Slides</h2>
                         <div class="box__description">
                             <p class="box__text">Pitch ready</p>
-                            <p class="box__text">Creative</p>
+                            <p class="box__text-small">Creative</p>
                         </div>
                     </div>
-                    <div class="box"></div>
+                    <div class="box-small"></div>
                 </div>
                 <div class="right-categories-boxes">
-                    <div class="box"></div>
-                    <div class="box">
-                        <h2 class="box__header">App Icons</h2>
-                        <div class="box__description">
-                            <p class="box__text">High-quality</p>
-                            <p class="box__text">Elegant</p>
+                    <div class="box-small"></div>
+                    <div class="box--blue">
+                        <svg class="box__icon" width="48" height="48">
+                            <use href="/img/icons/sprite.svg#phone-icon"></use>
+                        </svg>
+                        <h2 class="box__header--blue">App Icons</h2>
+                        <div class="box__description--blue">
+                            <p class="box__text--blue">High-quality</p>
+                            <p class="box__text-small--blue">Elegant</p>
                         </div>
                     </div>
                     <div class="box">
+                        <svg class="box__icon" width="48" height="48">
+                            <use href="/img/icons/sprite.svg#painting-icon"></use>
+                        </svg>
                         <h2 class="box__header">Design Tools</h2>
                         <div class="box__description">
                             <p class="box__text">Easy to use</p>
-                            <p class="box__text">Unique</p>
+                            <p class="box__text-small">Unique</p>
                         </div>
                     </div>
                 </div>
@@ -124,101 +138,121 @@
             </div>
         </section>
         <section class="trending">
-            <div class="trending-title">
-                <h2 class="trending-title__name section__name">TRENDING</h2>
-                <h3 class="trending-title__header section__header">Popular Products</h3>
+            <div class="trending-nav-section">
+                <div class="trending-title">
+                    <h2 class="trending-title__name section__name">TRENDING</h2>
+                    <h3 class="trending-title__header section__header">Popular Products</h3>
+                </div>
+                <div class="pages-nav">
+                    <button class="move-left" type="button"><span class="sr-only">Previous</span></button>
+                    <button class="move-right" type="button"><span class="sr-only">Next</span></button>
+                </div>
             </div>
-            <div class="pages-nav">
-                <button class="move-left" type="button"><span class="sr-only">Previous</span></button>
-                <button class="move-right" type="button"><span class="sr-only">Next</span></button>
-            </div>
-            <ul class="product__list">
-                <li class="product__item">
+            <ul class="trending-product__list">
+                <li class="trending-product__item">
+                    <svg class="cup__icon" width="48" height="48">
+                        <use href="/img/icons/sprite.svg#cup-icon"></use>
+                    </svg>
+                    <button class="trending-product__button" type="button">Go to product</button>
                     <img src="/img/journeey-product.webp" alt="Exploring, Experiencing" class="product__img" width="305" height="272">
-                    <h4 class="product__header">Travel Hero <span class="price">€29.99</span></h4>
-                    <div class="product__description">
-                        <p class="product__text">Adventure</p>
-                        <p class="product__text">Journey</p>
+                    <h4 class="trending-product__header">Travel Hero <span class="price">€29.99</span></h4>
+                    <div class="trending-product__description">
+                        <p class="trending-product__text">Adventure</p>
+                        <p class="trending-product__text-small">Journey</p>
                     </div>
                 </li>
-                <li class="product__item">
+                <li class="trending-product__item">
+                    <svg class="cup__icon" width="48" height="48">
+                        <use href="/img/icons/sprite.svg#cup-icon"></use>
+                    </svg>
+                    <button class="trending-product__button" type="button">Go to product</button>
                     <img src="/img/medicare-product.webp" alt="Healing Hands" class="product__img" width="305" height="272">
-                    <h4 class="product__header">Healthcare Pro <span class="price">€15.99</span></h4>
-                    <div class="product__description">
-                        <p class="product__text">Medical</p>
-                        <p class="product__text">Wellness</p>
+                    <h4 class="trending-product__header">Healthcare Pro <span class="price">€15.99</span></h4>
+                    <div class="trending-product__description">
+                        <p class="trending-product__text">Medical</p>
+                        <p class="trending-product__text-small">Wellness</p>
                     </div>
                 </li>
-                <li class="section-box">
+                <li class="trending-product__item">
+                    <svg class="cup__icon" width="48" height="48">
+                        <use href="/img/icons/sprite.svg#cup-icon"></use>
+                    </svg>
+                    <button class="trending-product__button" type="button">Go to product</button>
                     <img src="/img/foodish-product.webp" alt="Enjoy every moment with foodish catering" class="product__img" width="305" height="272">
-                    <h4 class="box__header">Foodish Delight <span class="price">€31.99</span></h4>
-                    <div class="box__description">
-                        <p class="box__text">Catering</p>
-                        <p class="box__text">Food</p>
+                    <h4 class="trending-product__header">Foodish Delight <span class="price">€31.99</span></h4>
+                    <div class="trending-product__description">
+                        <p class="trending-product__text">Catering</p>
+                        <p class="trending-product__text-small">Food</p>
                     </div>
                 </li>
-                <li class="section-box">
+                <li class="trending-product__item">
+                    <svg class="cup__icon" width="48" height="48">
+                        <use href="/img/icons/sprite.svg#cup-icon"></use>
+                    </svg>
+                    <button class="trending-product__button" type="button">Go to product</button>
                     <img src="/img/skyhomes-product.webp" alt="Sky Homes - Unlock the Doors to Your Perfect Home" class="product__img" width="305" height="272">
-                    <h4 class="box__header">Real Estate <span class="price">€40.99</span></h4>
-                    <div class="box__description">
-                        <p class="box__text">Modern</p>
-                        <p class="box__text">Homes</p>
+                    <h4 class="trending-product__header">Real Estate <span class="price">€40.99</span></h4>
+                    <div class="trending-product__description">
+                        <p class="trending-product__text">Modern</p>
+                        <p class="trending-product__text-small">Homes</p>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="pricing">
-            <div class="section-title">
-                <h2 class="section__header">PRICING PLAN</h2>
-                <h3 class="section__main-header">Choose The Perfect Plan for Creative Potential</h3>
+            <div class="pricing-title">
+                <h2 class="pricing-title__name section__name">PRICING PLAN</h2>
+                <h3 class="pricing-title__header section__header">Choose The Perfect Plan for Creative Potential</h3>
             </div>
             <ul class="pricing__list">
                 <li class="pricing__item">
                     <div class="pricing__title">
                         <h4 class="pricing__header">Standard Membership</h4>
-                        <p class="pricing__text">€14.99 <span class="pricing__span">/ Month</span></p>
+                        <p class="pricing__price">€14.99 <span class="pricing__span">/ Month</span></p>
                     </div>
-                    <div class="pricing__description">
-                        <p class="pricing__text">Enhanced Resourced Access</p>
-                        <p class="pricing__text">Monthly Credits</p>
-                        <p class="pricing__text">Priority Customer Support</p>
-                        <p class="pricing__text">Community Features Access</p>
-                    </div>
+                    <ul class="pricing__description">
+                        <li class="pricing__text">Enhanced Resourced Access</li>
+                        <li class="pricing__text">Monthly Credits</li>
+                        <li class="pricing__text">Priority Customer Support</li>
+                        <li class="pricing__text">Community Features Access</li>
+                    </ul>
                     <button class="subscribe-white" type="button">Subscribe</button>
                 </li>
                 <li class="pricing__item">
-                    <p class="pricing__label">BEST SELLER</p>
+                    <svg class="best-seller__icon" width="173" height="40">
+                        <use href="/img/icons/sprite.svg#best-seller-icon"></use>
+                    </svg>
                     <div class="pricing__title">
                         <h4 class="pricing__header">Plus Membership</h4>
-                        <p class="pricing__text">€29.99 <span class="pricing__span">/ Month</span></p>
+                        <p class="pricing__price">€29.99 <span class="pricing__span">/ Month</span></p>
                     </div>
-                    <div class="pricing__description">
-                        <p class="pricing__text">All Standard Benefits</p>
-                        <p class="pricing__text">Increased Monthly Credits</p>
-                        <p class="pricing__text">Early Access to New Releases</p>
-                        <p class="pricing__text">Member-Only Offers</p>
-                    </div>
+                    <ul class="pricing__description">
+                        <li class="pricing__text">All Standard Benefits</li>
+                        <li class="pricing__text">Increased Monthly Credits</li>
+                        <li class="pricing__text">Early Access to New Releases</li>
+                        <li class="pricing__text">Member-Only Offers</li>
+                    </ul>
                     <button class="subscribe-white" type="button">Subscribe</button>
                 </li>
                 <li class="pricing__item">
                     <div class="pricing__title">
                         <h4 class="pricing__header">Pro Membership</h4>
-                        <p class="pricing__text">€44.99 <span class="pricing__span">/ Month</span></p>
+                        <p class="pricing__price">€44.99 <span class="pricing__span">/ Month</span></p>
                     </div>
-                    <div class="pricing__description">
-                        <p class="pricing__text">All Plus Benefits</p>
-                        <p class="pricing__text">Unlimited Downloads</p>
-                        <p class="pricing__text">Custom Licensing</p>
-                        <p class="pricing__text">Direct Creator Collaboration</p>
-                    </div>
+                    <ul class="pricing__description">
+                        <li class="pricing__text">All Plus Benefits</li>
+                        <li class="pricing__text">Unlimited Downloads</li>
+                        <li class="pricing__text">Custom Licensing</li>
+                        <li class="pricing__text">Direct Creator Collaboration</li>
+                    </ul>
                     <button class="subscribe-white" type="button">Subscribe</button>
                 </li>
             </ul>
         </section>
         <section class="faq-container">
-            <div class="section-title">
-                <h2 class="section__header">F.A.Q</h2>
-                <h3 class="section__main-header">Answers to Your Questions</h3>
+            <div class="faq-title">
+                <h2 class="faq-title__name section__name">F.A.Q</h2>
+                <h3 class="faq-title__header section__header">Answers to Your Questions</h3>
                 <button class="faq__button" type="button">Ask Us A Question</button>
             </div>
             <div class="faq">
@@ -245,27 +279,27 @@
             </div>
         </section>
         <section class="blog">
-            <div class="section-title">
-                <h2 class="section__main-header">Latest Expert</h2>
+            <div class="blog-title">
+                <h2 class="blog-title__header section-header">Latest Expert</h2>
                 <button class="blog-see-all" type="button">Explore All Articles</button>
             </div>
             <div class="blog-container">
                 <article class="blog-box grid-row-span">
                     <p class="label-tag">TAG</p>
                     <img src="/img/binabox-blog.webp" alt="Binabox website" class="product__img" width="624" height="702">
-                    <h3 class="box__header">Creative Blog</h3>
+                    <h3 class="box__header-blog">Creative Blog</h3>
                     <time datetime="2024-04-15" class="time">15 APRIL 2024</time>
                 </article>
                 <article class="blog-box">
                     <p class="label-tag">TAG</p>
                     <img src="/img/best-dishes-blog.webp" alt="The Best Dishes website" class="product__img" width="624" height="289">
-                    <h3 class="box__header">Best Dishes</h3>
+                    <h3 class="box__header-blog">Best Dishes</h3>
                     <time datetime="2024-05-05" class="time">5 MAY 2024</time>
                 </article>
                 <article class="blog-box">
                     <p class="label-tag">TAG</p>
                     <img src="/img/contact-us-blog.webp" alt="Lotus Spa contact us form" class="product__img" width="624" height="289">
-                    <h3 class="box__header">Contact Us</h3>
+                    <h3 class="box__header-blog">Contact Us</h3>
                     <time datetime="2024-06-10" class="time">10 JUNE 2024</time>
                 </article>
             </div>
