@@ -172,6 +172,18 @@ body {
     padding-left: 17px;
 }
 
+.social-media__link {
+    color: #0D0D15;
+}
+
+.social-media__link:hover {
+    color: #0265DC;
+}
+
+.social-media__item:hover {
+    border-color: #0265DC;
+}
+
 .subscribe-container {
     display: flex;
     align-items: center;
@@ -201,7 +213,12 @@ body {
     font-size: 16px;
     line-height: 24px;
     box-sizing: border-box;
-    gap: 8px;
+    padding: 8px;
+}
+
+.email-form__input:hover {
+    border-color: blue;
+    cursor: pointer;
 }
 
 .subscribe-blue {
@@ -215,6 +232,11 @@ body {
     font-size: 16px;
     line-height: 24px;
     border: none;
+}
+
+.subscribe-blue:hover {
+    scale: 1.1;
+    transition: 0.2s;
 }
 
 .policy {
@@ -237,6 +259,10 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+}
+
+.policy__link:hover {
+    color: #0265DC;
 }
 
 .policy__item::after {
