@@ -2,6 +2,7 @@ body {
     font-family: 'Libre Franklin', 'Arial Narrow', Arial, sans-serif;
     background-color: #FFFFFF;
     color: #0D0D15;
+    max-width: 1440px;
 }
 
 .visually-hidden {
@@ -29,11 +30,14 @@ body {
     align-items: center;
     padding: 24px 80px;
     justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
-.pixmart {
+/*.pixmart {
     margin: 32px;
-}
+}*/
 
 .navigation__list {
     display: flex;

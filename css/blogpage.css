@@ -1,0 +1,289 @@
+.banner {
+    background: linear-gradient( 180deg, #F0F6FD 50%, #FFFFFF 100%);
+    height: 604px;
+    margin-bottom: -400px;
+    padding-left: 80px;
+}
+
+.banner__tag {
+    background-color: #0265DC;
+    border: none;
+    color: #F5F8FB;
+    border-radius: 100px;
+    width: 146px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.banner__header, .banner__secondary-banner {
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    text-wrap: nowrap;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.banner__secondary-banner {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.banner__header-image {
+    padding-top: 80px;
+    padding-left: 80px;
+}
+
+.banner__img {
+    border-radius: 20px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 40px;
+    padding-top: 80px;
+    padding-left: 80px;
+    gap: 48px;
+}
+
+.left-container {
+    gap: 40px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.profile__header {
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.time {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(42, 53, 65, 0.7);
+}
+
+.blog-categories {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 2px solid #0D0D15;
+}
+
+.blog-categories__header {
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.blog-categories__list {
+    list-style: url(/img/icons/blue-dot-icon.svg);
+    padding-left: 17px;
+}
+
+.blog-categories__link {
+    text-decoration: none;
+    padding-right: 0;
+    margin-right: 0; 
+    color: #0D0D15;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.blog-info {
+    margin-top: 50px;
+    border-top: 2px solid #0D0D15;
+}
+
+.blog-info__header {
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.blog-info__details {
+    gap: 8px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.blog-info__text {
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.blog-info__details::after {
+    border-bottom: 1px solid rgba(34, 34, 34, 0.15);
+}
+
+.main-content {
+    max-width: 980px;
+    margin-bottom: 100px;
+}
+
+.main-content__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(42, 53, 5, 0.85);
+    gap: 16px;
+}
+
+.main-content__header {
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.main-content__figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.main-content__figcaption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.figcation-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+    opacity: 70%;
+}
+
+.figcaption-link {
+    text-decoration: none;
+    color: #0265DC;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.figcaption-link:hover {
+    scale: 1.1;
+}
+
+.main-content__blockquote {
+    max-width: 980px;
+    background: url(/img/icons/quote-icon.svg) top left / 64px 64px no-repeat;
+    margin-left: 5px;
+}
+
+.main-content__blockquote-text {
+    padding-top: 8px;
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 80px;
+    margin-right: 30px;
+}
+
+.related-articles {
+    padding: 40px 80px;
+    gap: 32px;
+    background-color: #F0F6FD;
+}
+
+.related-articles__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.related-articles__header {
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+
+}
+
+.blog-see-all {
+    margin-left: auto;
+    border: none;   
+    background: #FFFFFF;
+    color: #0265DC;
+    font-weight: 590;
+    font-size: 16px;
+    line-height: 24px;
+    background: url(/img/icons/arrow-right-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 20px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+.blog-see-all:hover {
+    scale: 1.1;
+}
+
+.blog-articles {
+    display: flex;
+    gap: 32px;
+}
+
+.blog-box {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.label-tag {
+    position: absolute;
+    background-color: #0265DC;
+    border: none;
+    color: #F5F8FB;
+    border-radius: 100px;
+    width: 64px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    margin-top: 265px;
+    margin-left: 30px;
+}
+
+.product__img {
+    padding: 16px;
+    border-radius: 30px;
+}
+
+.blog-articles__details {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 20px;
+}
+
+.box__header-blog {
+    font-family: 'Plus Jakarta', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
