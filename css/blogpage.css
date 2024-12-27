@@ -106,6 +106,15 @@
     line-height: 24px;
 }
 
+.blog-categories__link:hover {
+    font-weight: 600;
+}
+
+.active {
+    transform: translateX(20px);
+    font-weight: 600;
+}
+
 .blog-info {
     margin-top: 50px;
     border-top: 2px solid #0D0D15;
@@ -122,6 +131,8 @@
     gap: 8px;
     margin-bottom: 30px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-info__text {
@@ -131,7 +142,8 @@
     line-height: 26px;
 }
 
-.blog-info__details::after {
+.separator::before {
+    content: '';
     border-bottom: 1px solid rgba(34, 34, 34, 0.15);
 }
 
