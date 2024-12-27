@@ -154,6 +154,7 @@
     box-sizing: border-box;
 }
 
+
 .box-small {
     width: 220px;
     height: 60px;
@@ -174,28 +175,40 @@
 }
 
 .box__description {
-    display: flex;
-    gap: 10px;
-    padding-left: 20px;
+    display: inline-flex;
+    margin-left: 20px;
     align-items: center;
 }
 
 .box__text, .box__text-small {
-    color: rgba(42, 53, 65, 0.7);
+    color: rgba(42, 53, 65, 0.85);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
+    position: relative;
 }
 
 .box__text::after {
-    content: url(/img/icons/dot-icon.svg);
-    padding: 10px;
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(42, 53, 65, 0.7);
+    border-radius: 50%;
+    margin: 0 8px;
+    vertical-align: middle;
 }
 
 .box__text--blue::after {
-    content: url(/img/icons/white-dot.svg);
-    padding: 10px;
-    color: white;
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(239, 245, 250, 0.82);
+    border-radius: 50%;
+    margin: 0 8px;
+    vertical-align: middle;
 }
 
 .box__icon {
@@ -225,9 +238,8 @@
 }
 
 .box__description--blue {
-    display: flex;
-    gap: 10px;
-    padding-left: 20px;
+    display: inline-flex;
+    margin-left: 20px;
     align-items: center;
 }
 
@@ -236,10 +248,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
+    position: relative;
 }
 
 .box__text-small--blue {
     color: rgba(239, 52453, 250, 0.82);
+    margin: 0;
 }
 
 .categories-content {
@@ -561,20 +576,22 @@
     list-style: none;
     background-image: url(/img/icons/chevron-down-icon.svg);
     text-wrap: nowrap;
-    padding: 40px;
+    padding: 30px;
 }
 
 .faq__answer {
+    width: 480px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     background-color: #FFFFFF;
     margin-top: 0;
-    padding-top: 10px;
+    padding-top: 5px;
     text-wrap: wrap;
     background-position: center right;
     background-repeat: no-repeat;
     padding: 40px;
+    border-radius: 10px;
 }
 
 .faq__details[open] .faq__question {
