@@ -35,10 +35,6 @@ body {
     margin-bottom: 0;
 }
 
-/*.pixmart {
-    margin: 32px;
-}*/
-
 .navigation__list {
     display: flex;
     list-style: none;

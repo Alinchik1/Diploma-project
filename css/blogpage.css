@@ -264,6 +264,7 @@
     background-color: #FFFFFF;
     border-radius: 20px;
     width: 100%;
+    box-shadow: 0 4px 30px rgba(29, 57, 95, 0.05);
 }
 
 .label-tag {

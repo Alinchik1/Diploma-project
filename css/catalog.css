@@ -87,6 +87,7 @@
     display: inline-block;
     transition: background .1s;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .checkbox__span:hover {
@@ -112,6 +113,8 @@
 
 .options {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .radio__span {
