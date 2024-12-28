@@ -195,7 +195,7 @@
 }
 
 .figcaption-link:hover {
-    scale: 1.1;
+    color: #3892F3;
 }
 
 .main-content__blockquote {
@@ -252,7 +252,10 @@
 }
 
 .blog-see-all:hover {
-    scale: 1.1;
+    color: #3892F3;
+    background: url(/img/icons/arrow-right-hover-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .blog-articles {

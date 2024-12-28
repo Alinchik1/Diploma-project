@@ -50,7 +50,17 @@ body {
 }
 
 .navigation__link:hover {
-    color: blue;
+    color: #3892F3;
+}
+
+.navigation__link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
+}
+
+.active-card {
+    color: #3892F3;
+    cursor: auto;
 }
 
 .search__form {
@@ -75,7 +85,7 @@ body {
 }
 
 .search__input:hover {
-    border-color: blue;
+    border-color: #3892F3;
     cursor: pointer;
 }
 
@@ -87,6 +97,14 @@ body {
 
 .shopping-button:hover {
     scale: 1.1;
+}
+
+.shopping-button:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    opacity: 1.1;
 }
 
 .footer {
@@ -158,18 +176,16 @@ body {
     display: flex;
     list-style: none;
     gap: 8px;
+    align-items: center;
 }
 .social-media__item {
     border: 2px solid rgba(29, 54, 83, 0.17);
     border-radius: 8px;
     width: 64px;
     height: 64px;
-    align-items: center;
     align-content: center;
-    justify-content: center;
-    gap: 10px;
     box-sizing: border-box;
-    padding-left: 17px;
+    padding-left: 18px;
 }
 
 .social-media__link {
@@ -181,7 +197,7 @@ body {
 }
 
 .social-media__item:hover {
-    border-color: #0265DC;
+    scale: 1.1;
 }
 
 .subscribe-container {
@@ -217,7 +233,7 @@ body {
 }
 
 .email-form__input:hover {
-    border-color: blue;
+    border-color: #3892F3;
     cursor: pointer;
 }
 
@@ -235,8 +251,7 @@ body {
 }
 
 .subscribe-blue:hover {
-    scale: 1.1;
-    transition: 0.2s;
+    background-color: #3892F3;
 }
 
 .policy {
@@ -262,7 +277,7 @@ body {
 }
 
 .policy__link:hover {
-    color: #0265DC;
+    color: #3892F3;
 }
 
 .policy__item::after {

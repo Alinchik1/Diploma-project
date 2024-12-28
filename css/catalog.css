@@ -294,12 +294,11 @@
 }
 
 .clear-all-filter:hover {
-    color: #F5F8FB;
     border: none; 
     transition: 0.3s;
     cursor: pointer;
-    background: url(/img/icons/cross-white-icon.svg) left 30px center / 12px 12px no-repeat;
-    background-color: #0265DC;
+    background-color: rgba(41, 77, 117, 0.09);
+    border: 2px solid rgba(29, 54, 83, 0.17);
 }
 
 .main-content {
@@ -374,7 +373,7 @@
 
 .layout-list-button:hover {
     scale: 1.1;
-    border-color: #0265DC;
+    border-color: #3892F3;
 }
 
 .selected-filters {
@@ -535,23 +534,23 @@
 }
 
 .load-more__button:hover {
-    background-color: #0265DC;
-    color: #F5F8FB;
+    background-color: rgba(41, 77, 117, 0.09);
     border: none; 
     transition: 0.3s;
     cursor: pointer;
+    border: 2px solid rgba(41, 77, 117, 0.09);
 }
 
 .fade {
     position: relative;
-    overflow: hidden;
-    padding: 20px;
+    display: flex;
 }
 
 .fade::after {
     content: '';
     position: absolute;
-    mask-image: linear-gradient(to bottom, #554665 50%, #FFFFFF 100%);
-    pointer-events: none;
-
+    background: linear-gradient(to bottom, transparent, #FFFFFF 60% );
+    width: 100%;
+    height: 52px;
+    padding-bottom: 20px;
 }

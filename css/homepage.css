@@ -4,11 +4,12 @@
     background: 
         linear-gradient(
             65deg, 
-            rgba(240, 246, 253, 1) 60%,
+            rgba(240, 246, 253, 1) 80%,
             rgba(255, 255, 255, 1) 100%
     );
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .banner-content {
@@ -85,11 +86,38 @@
 
 .banner-img {
     display: grid;
-    grid-template-columns: 317px 1fr;
-    grid-template-rows: 340px 1fr;
-    background: 
-    url(/img/icons/pen-icon.svg) top 9px left 494px / 56px 56px no-repeat,
-    url(/img/icons/meter-icon.svg) top 446px left 30px / 56px 56px no-repeat;
+    grid-template-columns: repeat(8, 78px);
+    grid-template-rows: repeat(8, 68px);
+}
+
+.banner-img__top {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.banner-img__right {
+    grid-column: 5;
+    grid-row: 2; 
+    margin-left: -20px;
+}
+
+.banner-img__bot {
+    grid-column: 2;
+    grid-row: 5; 
+    margin-top: -25px;
+}
+
+.pen-icon {
+    grid-column: 7;
+    grid-row: 1;
+    margin-top: 20px;  
+}
+
+.meter-icon {
+    grid-column: 1;
+    grid-row: 7; 
+    margin-top: 20px;
 }
 
 .product {
@@ -154,11 +182,27 @@
     box-sizing: border-box;
 }
 
-
-.box-small {
+.box-small-down {
     width: 220px;
     height: 60px;
-    background-color: #F4F7FA;
+    background: 
+    linear-gradient(
+        185deg, 
+        #F4F7FA 30%,
+        rgba(255, 255, 255, 1) 100%);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.box-small-up {
+    width: 220px;
+    height: 60px;
+    background: 
+    linear-gradient(
+        0deg, 
+        #F4F7FA 30%,
+        rgba(255, 255, 255, 1) 100%);
     border-radius: 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -295,13 +339,17 @@
 
 .trending-nav-section {
     gap: 16px;
+}
+
+.trending-nav-title {
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .pages-nav {
     width: 140px;
     height: 64px;
-    margin-left: auto;
 }
 
 .move-left {
@@ -313,7 +361,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FFFFFF;
-    margin-top: 40px;
 }
 
 .move-right {
@@ -328,14 +375,14 @@
 }
 
 .move-left:hover {
-    background-color: #0265DC;
+    background-color: #3892F3;
     transition: .5s;
     background-image: url(/img/icons/chevron-left-white.svg);
     cursor: pointer;
 }
 
 .move-right:hover {
-    background-color: #0265DC;
+    background-color: #3892F3;
     transition: .3s;
     background-image: url(/img/icons/chevron-right-white.svg);
     cursor: pointer;
@@ -349,33 +396,12 @@
     padding: 0;
 }
 
-.trending-product__header {
-    font-family: 'Plus Jakarta Sans', 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
-    gap: 8px;
-    margin-left: 20px;
-    margin-bottom: 0; 
-}
-
-.trending-product__description {
+.trending-product-title {
     display: flex;
-    gap: 8px;
-    padding-left: 20px;
-    align-items: center;
-}
-
-.trending-product__text, .trending-product__text-small {
-    color: rgba(42, 53, 65, 0.7);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.trending-product__text::after {
-    content: url(/img/icons/dot-icon.svg);
-    padding: 10px;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 10px;
+    align-items: baseline;
 }
 
 .price {
@@ -383,7 +409,41 @@
     font-size: 16px;
     line-height: 24px;
     color: #0265DC;
-    padding-left: 10px;
+}
+
+.trending-product__header {
+    font-family: 'Plus Jakarta Sans', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    gap: 8px;
+    margin: 0;
+}
+
+.trending-product__description {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.trending-product__text, .trending-product__text-small {
+    color: rgba(42, 53, 65, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    position: relative;
+}
+
+.trending-product__text::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(42, 53, 65, 0.7);
+    border-radius: 50%;
+    margin: 0 8px;
+    vertical-align: middle;
 }
 
 .cup__icon {
@@ -519,7 +579,7 @@
     gap: 40px;
     display: flex;
     justify-content: space-between;
-    background-image: url(/img/icons/faq-background-icon.svg);
+    background: url(/img/icons/faq-background-icon.svg) top 70px center / 689px 498px no-repeat;
 }
 
 .faq-title {
@@ -540,9 +600,8 @@
 }
 
 .faq__button:hover {
-    background-color: #0265DC;
-    color: #F5F8FB;
-    border: none; 
+    background-color: rgba(41, 77, 117, 0.09);
+    border: 2px solid rgba(29, 54, 83, 0.17);
     transition: 0.3s;
     cursor: pointer;
 }
@@ -550,10 +609,10 @@
 .faq {
     gap: 16px;
     margin-left: auto;
-}
-
-.faq__details {
-    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 100px;
 }
 
 .faq__details:hover {
@@ -564,6 +623,7 @@
 }
 
 .faq__question {
+    width: 510px;
     border-radius: 10px;
     box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
     font-family: 'Plus Jakarta Sans', 'Times New Roman', Times, serif;
@@ -574,28 +634,28 @@
     background-repeat: no-repeat;
     background-position: center right 20px;
     list-style: none;
-    background-image: url(/img/icons/chevron-down-icon.svg);
+    background-image: url(/img/icons/faq-arrow-down-icon.svg);
     text-wrap: nowrap;
     padding: 30px;
 }
 
 .faq__answer {
-    width: 480px;
+    width: 510px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     background-color: #FFFFFF;
     margin-top: 0;
     padding-top: 5px;
-    text-wrap: wrap;
+    margin-bottom: 0;
     background-position: center right;
     background-repeat: no-repeat;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
 }
 
 .faq__details[open] .faq__question {
-    background-image: url(/img/icons/chevron-up-icon.svg);
+    background-image: url(/img/icons/faq-arrow-up-icon.svg);
 }
 
 .blog {
@@ -611,7 +671,6 @@
 }
 
 .blog-see-all {
-    margin-left: auto;
     border: none;   
     background: #FFFFFF;
     color: #0265DC;
@@ -621,13 +680,16 @@
     background: url(/img/icons/arrow-right-icon.svg);
     background-repeat: no-repeat;
     background-position: center right;
-    padding-right: 20px;
+    padding-right: 10px;
     margin-bottom: 0;
     box-sizing: border-box;
 }
 
 .blog-see-all:hover {
-    scale: 1.1;
+    color: #3892F3;
+    background: url(/img/icons/arrow-right-hover-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .blog-container {
