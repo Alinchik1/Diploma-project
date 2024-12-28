@@ -214,6 +214,10 @@
     border: none;
 }
 
+.form-switcher__input + .form-switcher__box:focus {
+    outline: 4px solid #3892F3;
+}
+
 .form-switcher__input:checked + .form-switcher__box::after {
     transform: translateX(20px);
     border: none;
@@ -301,6 +305,11 @@
     border: 2px solid rgba(29, 54, 83, 0.17);
 }
 
+.clear-all-filter:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+}
+
 .main-content {
     gap: 48px;
 }
@@ -332,6 +341,10 @@
     outline: 2px solid #3892F3;
 }
 
+.dropdown select:focus {
+    outline: 4px solid #3892F3;
+}
+
 .selected-filters {
     display: flex;
     margin-left: auto;
@@ -357,10 +370,16 @@
     cursor: pointer;
     width: 40px;
     height: 40px;
+    padding: 0;
 }
 
 .layout-grid-button:hover {
     scale: 1.1;
+}
+
+.layout-grid-button:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
 }
 
 .layout-list-button {
@@ -374,6 +393,11 @@
 .layout-list-button:hover {
     scale: 1.1;
     border-color: #3892F3;
+}
+
+.layout-list-button:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
 }
 
 .selected-filters {
@@ -395,6 +419,10 @@
 
 .filter-tag:hover {
     outline: 2px solid #3892F3;
+}
+
+.filter-tag:focus {
+    outline: 4px solid #3892F3;
 }
 
 .catalog-container {
@@ -445,7 +473,6 @@
     margin-left: 20px;
 }
 
-
 .box__header {
     font-family: 'Plus Jakarta Sans', 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -495,19 +522,29 @@
 .price-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .price-section__buttons {
     display: flex;
+    column-gap: 5px;
 }
 
 .heart-button {
     background-color: transparent;
     border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
 }
 
 .heart-button:hover {
     scale: 1.1;
+}
+
+.heart-button:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
 }
 
 .product__img {
@@ -540,6 +577,11 @@
     cursor: pointer;
     border: 2px solid rgba(41, 77, 117, 0.09);
 }
+
+.load-more__button:focus {
+    outline: 4px solid #3892F3;
+}
+
 
 .fade {
     position: relative;

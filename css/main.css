@@ -35,6 +35,11 @@ body {
     margin-bottom: 0;
 }
 
+.pixmart:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+}
+
 .navigation__list {
     display: flex;
     list-style: none;
@@ -93,6 +98,9 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
 }
 
 .shopping-button:hover {
@@ -101,9 +109,7 @@ body {
 
 .shopping-button:focus {
     outline: 4px solid #3892F3;
-    border-radius: 4px;
-    width: 50px;
-    height: 50px;
+    border-radius: 8px;
     opacity: 1.1;
 }
 
@@ -167,6 +173,16 @@ body {
     text-wrap: nowrap;
 }
 
+.footer-section__link:hover {
+    color: #3892F3;
+}
+
+.footer-section__link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
+    color: #0265DC;
+}
+
 .social-media {
     display: flex;
     justify-content: space-between;
@@ -192,7 +208,7 @@ body {
     color: #0D0D15;
 }
 
-.social-media__link:hover {
+.social-media__link:focus {
     color: #0265DC;
 }
 
@@ -237,6 +253,11 @@ body {
     cursor: pointer;
 }
 
+.email-form__input:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
+}
+
 .subscribe-blue {
     width: 157px;
     height: 64px;
@@ -252,6 +273,10 @@ body {
 
 .subscribe-blue:hover {
     background-color: #3892F3;
+}
+
+.subscribe-blue:focus {
+    outline: 4px solid #3892F3;
 }
 
 .policy {
@@ -278,6 +303,12 @@ body {
 
 .policy__link:hover {
     color: #3892F3;
+}
+
+.policy__link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
+    color: #0265DC;
 }
 
 .policy__item::after {

@@ -110,6 +110,11 @@
     font-weight: 600;
 }
 
+.blog-categories__link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+}
+
 .active {
     transform: translateX(20px);
     font-weight: 600;
@@ -198,6 +203,11 @@
     color: #3892F3;
 }
 
+.figcaption-link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+}
+
 .main-content__blockquote {
     max-width: 980px;
     background: url(/img/icons/quote-icon.svg) top left / 64px 64px no-repeat;
@@ -232,7 +242,6 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.5px;
-
 }
 
 .blog-see-all {
@@ -256,6 +265,11 @@
     background: url(/img/icons/arrow-right-hover-icon.svg);
     background-repeat: no-repeat;
     background-position: center right;
+}
+
+.blog-see-all:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
 }
 
 .blog-articles {

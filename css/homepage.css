@@ -61,6 +61,11 @@
     cursor: pointer;
 }
 
+.shop-now:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+}
+
 .watch {
     width: 235px;
     height: 64px;
@@ -82,6 +87,11 @@
 .watch:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+.watch:focus {
+    background-color: rgba(41, 77, 117, 0.09);
+    outline: 4px solid #3892F3;
 }
 
 .banner-img {
@@ -381,11 +391,22 @@
     cursor: pointer;
 }
 
+.move-left:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+}
+
+
 .move-right:hover {
     background-color: #3892F3;
     transition: .3s;
     background-image: url(/img/icons/chevron-right-white.svg);
     cursor: pointer;
+}
+
+.move-right:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
 }
 
 .trending-product__list {
@@ -567,6 +588,14 @@
     cursor: pointer;
 }
 
+.subscribe-white:focus {    
+    outline: 4px solid #3892F3;
+    border-radius: 4px;
+    background-color: rgba(41, 77, 117, 0.09);
+    color: #0D0D15;
+
+}
+
 .best-seller__icon {
     position: absolute;
     padding-left: 212px;
@@ -604,6 +633,12 @@
     border: 2px solid rgba(29, 54, 83, 0.17);
     transition: 0.3s;
     cursor: pointer;
+}
+
+.faq__button:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 4px;
+    background-color: rgba(41, 77, 117, 0.09);
 }
 
 .faq {
@@ -690,6 +725,11 @@
     background: url(/img/icons/arrow-right-hover-icon.svg);
     background-repeat: no-repeat;
     background-position: center right;
+}
+
+.blog-see-all:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
 }
 
 .blog-container {
