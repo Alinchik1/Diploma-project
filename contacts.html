@@ -13,7 +13,7 @@
     <title>Homepage</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header container">
         <a href="index.html" class="pixmart">
             <svg class="logo-small" width="107" height="24">
                 <use href="/img/icons/sprite.svg#logo-small"></use>
@@ -38,76 +38,78 @@
         </button>
     </header>
     <main class="content">
-        <div class="contact">
-            <div class="contact-container">
-                <article class="contact-title">
-                    <h1 class="contact-title__name section__name">CONTACTS</h1>
-                    <h2 class="contact-title__header section__header">Get in Touch with Us</h2>
-                    <p class="contact-title__text">We are happy to help you navigate your creative journey. Reach our for any questions, support, or feedback.</p>
-                    <button class="shop-now" type="button">Shop Now</button>
-                </article>
-                <div class="contact-info">
-                    <p class="contact-info__text phone">+1 (555) 123-4567</p>
-                    <p class="contact-info__text email">support@pixmart.com</p>
-                    <p class="contact-info__text hours">Monday to Friday : 9 AM - 5 PM EST</p>
+        <div class="content__wraper container">
+            <div class="contact">
+                <div class="contact-container">
+                    <article class="contact-title">
+                        <h1 class="contact-title__name section__name">CONTACTS</h1>
+                        <h2 class="contact-title__header section__header">Get in Touch with Us</h2>
+                        <p class="contact-title__text">We are happy to help you navigate your creative journey. Reach our for any questions, support, or feedback.</p>
+                        <button class="shop-now" type="button">Shop Now</button>
+                    </article>
+                    <ul class="contact-info">
+                        <li class="contact-info__item phone"><a href="tel:+15551234567" class="contact-info__link">+1 (555) 123-4567</a></li>
+                        <li class="contact-info__item email"><a href="mailto:support@pixmart.com" class="contact-info__link">support@pixmart.com</a></li>
+                        <li class="contact-info__item hours">Monday to Friday : 9 AM - 5 PM EST</li>
+                    </ul>
+                </div>
+                <div class="map-container">
+                    <div class="location-container">
+                        <h3 class="location-container__header">PixMart QH</h3>
+                        <p class="location-container__text">123 Creative Ave, Design City, 45678</p>
+                    </div>
+                    <div class="google-map">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23061.487253271294!2d7.42585245!3d43.7378514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc26f7b3f8531%3A0x74f7784c3ac49cfc!2sMonaco!5e0!3m2!1sen!2s!4v1735301660481!5m2!1sen!2s" width="618" height="314" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="map-container">
-                <div class="location-container">
-                    <h3 class="location-container__header">PixMart QH</h3>
-                    <p class="location-container__text">123 Creative Ave, Design City, 45678</p>
+            <form action="#" class="contact-form" method="post">
+                <div class="contact-form__container">    
+                    <div class="form-control">
+                        <label for="full-name" class="form-control__label">Full Name</label>
+                        <input type="text" id="full-name" class="form-control__input" minlength="4" maxlength="30" placeholder="Amelia Robert Johnson" required>
+                        <span class="form-control__valid-text">Field validation is successful</span>
+                        <span class="form-control__invalid-text">This field is required</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="email-address" class="form-control__label">Email Address</label>
+                        <input type="email" id="email-address" class="form-control__input" placeholder="amelia.robertjohnson@pixmart.com" required>
+                        <span class="form-control__valid-text">Field validation is successful</span>
+                        <span class="form-control__invalid-text">This field is required</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="sort">Subject</label>
+                        <select name="subject" id="sort">
+                            <option value="general-inquiry" class="sort-item">General Inquiry</option>
+                            <option value="refund" class="sort-item">Refund</option>
+                            <option value="complain" class="sort-item">Complain</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label for="message" class="form-control__label">Message</label>
+                        <textarea name="message" id="message" class="form-control__input textarea" placeholder="Enter your message ..."></textarea>
+                    </div>
                 </div>
-                <div class="google-map">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23061.487253271294!2d7.42585245!3d43.7378514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc26f7b3f8531%3A0x74f7784c3ac49cfc!2sMonaco!5e0!3m2!1sen!2s!4v1735301660481!5m2!1sen!2s" width="618" height="314" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="submit__container">
+                    <div class="submit-checkboxes">
+                        <label class="options">
+                            <input class="checkbox__input visually-hidden" type="checkbox" name="sumbit" value="subscribe">
+                            <span class="checkbox__span"></span>Subscribe me to Newsletter
+                        </label> 
+                        <label class="options">
+                            <input class="checkbox__input visually-hidden" type="checkbox" name="sumbit" value="privacy-policy">
+                            <span class="checkbox__span"></span>I have read the User & Privacy Policy
+                        </label>
+                    </div>
+                    <div class="submit-button">
+                        <button class="send-message" type="submit">Send Message</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
-        <form action="#" class="contact-form" method="post">
-            <div class="contact-form__container">    
-                <div class="form-control">
-                    <label for="full-name" class="form-control__label">Full Name</label>
-                    <input type="text" id="full-name" class="form-control__input" minlength="4" maxlength="30" placeholder="Amelia Robert Johnson" required>
-                    <span class="form-control__valid-text">Field validation is successful</span>
-                    <span class="form-control__invalid-text">This field is required</span>
-                </div>
-                <div class="form-control">
-                    <label for="email-address" class="form-control__label">Email Address</label>
-                    <input type="email" id="email-address" class="form-control__input" placeholder="amelia.robertjohnson@pixmart.com" required>
-                    <span class="form-control__valid-text">Field validation is successful</span>
-                    <span class="form-control__invalid-text">This field is required</span>
-                </div>
-                <div class="form-control">
-                    <label for="sort">Subject</label>
-                    <select name="subject" id="sort">
-                        <option value="general-inquiry" class="sort-item">General Inquiry</option>
-                        <option value="refund" class="sort-item">Refund</option>
-                        <option value="complain" class="sort-item">Complain</option>
-                    </select>
-                </div>
-                <div class="form-control">
-                    <label for="message" class="form-control__label">Message</label>
-                    <textarea name="message" id="message" class="form-control__input textarea" placeholder="Enter your message ..."></textarea>
-                </div>
-            </div>
-            <div class="submit__container">
-                <div class="submit-checkboxes">
-                    <label class="options">
-                        <input class="checkbox__input visually-hidden" type="checkbox" name="sumbit" value="subscribe">
-                        <span class="checkbox__span"></span>Subscribe me to Newsletter
-                    </label> 
-                    <label class="options">
-                        <input class="checkbox__input visually-hidden" type="checkbox" name="sumbit" value="privacy-policy">
-                        <span class="checkbox__span"></span>I have read the User & Privacy Policy
-                    </label>
-                </div>
-                <div class="submit-button">
-                    <button class="send-message" type="submit">Send Message</button>
-                </div>
-            </div>
-        </form>
     </main>
     <footer class="footer">
-        <section class="main-footer">
+        <section class="main-footer container">
             <div class="footer-left">
                 <svg class="logo-big" width="300" height="58">
                     <use href="/img/icons/sprite.svg#logo-big"></use>
@@ -150,7 +152,7 @@
                 </div>
             </div>
         </section>
-        <div class="footer-bot">
+        <div class="footer-bot container">
             <div class="social-media">
                 <ul class="social-media__list">
                     <li class="social-media__item">
@@ -186,12 +188,16 @@
             </div>
         </div>
         <div class="policy">
-            <ul class="policy__list">
-                <li class="policy__item"><a href="" class="policy__link">Privacy Policy</a></li>
-                <li class="policy__item"><a href="" class="policy__link">Terms and Conditions</a></li>
-                <li class="policy__item-last"><a href="" class="policy__link">Site Map</a></li>
-            </ul>
-            <p class="copyright__text">Copyright © 2024 Pixmart. All rights reserved.</p>
+            <div class="policy__wraper container">
+                <div class="policy__content">
+                    <ul class="policy__list">
+                        <li class="policy__item"><a href="" class="policy__link">Privacy Policy</a></li>
+                        <li class="policy__item"><a href="" class="policy__link">Terms and Conditions</a></li>
+                        <li class="policy__item-last"><a href="" class="policy__link">Site Map</a></li>
+                    </ul>
+                </div>
+                <p class="copyright__text">Copyright © 2024 Pixmart. All rights reserved.</p>
+            </div>
         </div>
     </footer> 
 </body>
