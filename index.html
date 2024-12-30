@@ -14,18 +14,18 @@
 </head>
 <body class="body">
     <header class="header">
-        <a href="https://pixmart.com" class="pixmart">
+        <a href="index.html" class="pixmart">
             <svg class="logo-small" width="107" height="24">
                 <use href="/img/icons/sprite.svg#logo-small"></use>
-            </svg>
+            </svg><span class="sr-only">Pixmart</span>
         </a>
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="index.html" class="navigation__link active-card">About</a></li>
                 <li class="navigation__item"><a href="catalog.html" class="navigation__link">Products</a></li>
                 <li class="navigation__item"><a href="" class="navigation__link">Creators</a></li>
                 <li class="navigation__item"><a href="blogpage.html" class="navigation__link">Blog</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Contact</a></li>
+                <li class="navigation__item"><a href="contacts.html" class="navigation__link">Contact</a></li>
             </ul>
         </nav>
         <form action="#" class="search__form" method="get">
@@ -34,7 +34,7 @@
         <button class="shopping-button" type="button">
             <svg class="shopping-icon" width="40" height="40">
                 <use href="/img/icons/sprite.svg#shopping-icon"></use>
-            </svg>
+            </svg><span class="sr-only">Shopping bag</span>
         </button>
     </header>
     <main class="content">
@@ -55,6 +55,12 @@
                 <img src="/img/ultimate-platform-banner.webp" alt="The Ultimate Platform for Planning and Promotions Successful Events" class="banner-img__top" width="281" height="422">
                 <img src="/img/jenna-smith-banner.webp" alt="Jenna Smith - Business Strategy and Innovation, Bussiness and Leadership" class="banner-img__right" width="291" height="164">
                 <img src="/img/screens-for-event-banner.webp" alt="Complete Screens for Event & Conference Website" class="banner-img__bot" width="514" height="299">
+                <svg class="pen-icon" width="100" height="100">
+                    <use href="/img/icons/sprite.svg#pen-icon"></use>
+                </svg>
+                <svg class="meter-icon" width="100" height="100">
+                    <use href="/img/icons/sprite.svg#meter-icon"></use>
+                </svg>
             </div>
         </section>
         <section class="product">
@@ -104,10 +110,10 @@
                             <p class="box__text-small">Creative</p>
                         </div>
                     </div>
-                    <div class="box-small"></div>
+                    <div class="box-small-down"></div>
                 </div>
                 <div class="right-categories-boxes">
-                    <div class="box-small"></div>
+                    <div class="box-small-up"></div>
                     <div class="box--blue">
                         <svg class="box__icon" width="48" height="48">
                             <use href="/img/icons/sprite.svg#phone-icon"></use>
@@ -141,11 +147,12 @@
             <div class="trending-nav-section">
                 <div class="trending-title">
                     <h2 class="trending-title__name section__name">TRENDING</h2>
-                    <h3 class="trending-title__header section__header">Popular Products</h3>
-                </div>
-                <div class="pages-nav">
-                    <button class="move-left" type="button"><span class="sr-only">Previous</span></button>
-                    <button class="move-right" type="button"><span class="sr-only">Next</span></button>
+                    <div class="trending-nav-title">
+                        <h3 class="trending-title__header section__header">Popular Products</h3>
+                    <div class="pages-nav">
+                        <button class="move-left" type="button"><span class="sr-only">Previous</span></button>
+                        <button class="move-right" type="button"><span class="sr-only">Next</span></button>
+                    </div>
                 </div>
             </div>
             <ul class="trending-product__list">
@@ -155,7 +162,10 @@
                     </svg>
                     <button class="trending-product__button" type="button">Go to product</button>
                     <img src="/img/journeey-product.webp" alt="Exploring, Experiencing" class="product__img" width="305" height="272">
-                    <h4 class="trending-product__header">Travel Hero <span class="price">€29.99</span></h4>
+                    <div class="trending-product-title">
+                        <h4 class="trending-product__header">Travel Hero</h4>
+                        <span class="price">€29.99</span>
+                    </div>
                     <div class="trending-product__description">
                         <p class="trending-product__text">Adventure</p>
                         <p class="trending-product__text-small">Journey</p>
@@ -167,7 +177,10 @@
                     </svg>
                     <button class="trending-product__button" type="button">Go to product</button>
                     <img src="/img/medicare-product.webp" alt="Healing Hands" class="product__img" width="305" height="272">
-                    <h4 class="trending-product__header">Healthcare Pro <span class="price">€15.99</span></h4>
+                    <div class="trending-product-title">
+                        <h4 class="trending-product__header">Healthcare Pro</h4> 
+                        <span class="price">€15.99</span>
+                    </div>
                     <div class="trending-product__description">
                         <p class="trending-product__text">Medical</p>
                         <p class="trending-product__text-small">Wellness</p>
@@ -179,7 +192,10 @@
                     </svg>
                     <button class="trending-product__button" type="button">Go to product</button>
                     <img src="/img/foodish-product.webp" alt="Enjoy every moment with foodish catering" class="product__img" width="305" height="272">
-                    <h4 class="trending-product__header">Foodish Delight <span class="price">€31.99</span></h4>
+                    <div class="trending-product-title">
+                        <h4 class="trending-product__header">Foodish Delight</h4> 
+                        <span class="price">€31.99</span>
+                    </div>
                     <div class="trending-product__description">
                         <p class="trending-product__text">Catering</p>
                         <p class="trending-product__text-small">Food</p>
@@ -191,7 +207,10 @@
                     </svg>
                     <button class="trending-product__button" type="button">Go to product</button>
                     <img src="/img/skyhomes-product.webp" alt="Sky Homes - Unlock the Doors to Your Perfect Home" class="product__img" width="305" height="272">
-                    <h4 class="trending-product__header">Real Estate <span class="price">€40.99</span></h4>
+                    <div class="trending-product-title">
+                        <h4 class="trending-product__header">Real Estate</h4> 
+                        <span class="price">€40.99</span>
+                    </div>
                     <div class="trending-product__description">
                         <p class="trending-product__text">Modern</p>
                         <p class="trending-product__text-small">Homes</p>
@@ -356,21 +375,21 @@
                         <a href="https://x.com" class="social-media__link">
                             <svg class="twitter-icon" width="24" height="24">
                                 <use href="/img/icons/sprite.svg#twitter-icon"></use>
-                            </svg>
+                            </svg><span class="sr-only">Twitter</span>
                         </a>
                     </li>
                     <li class="social-media__item">
                         <a href="https://facebook.com" class="social-media__link">
                             <svg class="facebook-icon" width="24" height="24">
                                 <use href="/img/icons/sprite.svg#facebook-icon"></use>
-                            </svg>
+                            </svg><span class="sr-only">Facebook</span>
                         </a>
                     </li>
                     <li class="social-media__item">
                         <a href="https://telegram.com" class="social-media__link">
                             <svg class="telegram-icon" width="24" height="24">
                                 <use href="/img/icons/sprite.svg#telegram-icon"></use>
-                            </svg>
+                            </svg><span class="sr-only">Telegram</span>
                         </a>
                     </li>
                 </ul>

@@ -110,6 +110,11 @@
     font-weight: 600;
 }
 
+.blog-categories__link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+}
+
 .active {
     transform: translateX(20px);
     font-weight: 600;
@@ -195,7 +200,12 @@
 }
 
 .figcaption-link:hover {
-    scale: 1.1;
+    color: #3892F3;
+}
+
+.figcaption-link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
 }
 
 .main-content__blockquote {
@@ -232,7 +242,6 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.5px;
-
 }
 
 .blog-see-all {
@@ -252,7 +261,15 @@
 }
 
 .blog-see-all:hover {
-    scale: 1.1;
+    color: #3892F3;
+    background: url(/img/icons/arrow-right-hover-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.blog-see-all:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
 }
 
 .blog-articles {
@@ -264,6 +281,7 @@
     background-color: #FFFFFF;
     border-radius: 20px;
     width: 100%;
+    box-shadow: 0 4px 30px rgba(29, 57, 95, 0.05);
 }
 
 .label-tag {

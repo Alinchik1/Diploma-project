@@ -35,9 +35,10 @@ body {
     margin-bottom: 0;
 }
 
-/*.pixmart {
-    margin: 32px;
-}*/
+.pixmart:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+}
 
 .navigation__list {
     display: flex;
@@ -54,7 +55,17 @@ body {
 }
 
 .navigation__link:hover {
-    color: blue;
+    color: #3892F3;
+}
+
+.navigation__link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
+}
+
+.active-card {
+    color: #3892F3;
+    cursor: auto;
 }
 
 .search__form {
@@ -79,7 +90,7 @@ body {
 }
 
 .search__input:hover {
-    border-color: blue;
+    border-color: #3892F3;
     cursor: pointer;
 }
 
@@ -87,10 +98,19 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
 }
 
 .shopping-button:hover {
     scale: 1.1;
+}
+
+.shopping-button:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
+    opacity: 1.1;
 }
 
 .footer {
@@ -153,6 +173,16 @@ body {
     text-wrap: nowrap;
 }
 
+.footer-section__link:hover {
+    color: #3892F3;
+}
+
+.footer-section__link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
+    color: #0265DC;
+}
+
 .social-media {
     display: flex;
     justify-content: space-between;
@@ -162,30 +192,28 @@ body {
     display: flex;
     list-style: none;
     gap: 8px;
+    align-items: center;
 }
 .social-media__item {
     border: 2px solid rgba(29, 54, 83, 0.17);
     border-radius: 8px;
     width: 64px;
     height: 64px;
-    align-items: center;
     align-content: center;
-    justify-content: center;
-    gap: 10px;
     box-sizing: border-box;
-    padding-left: 17px;
+    padding-left: 18px;
 }
 
 .social-media__link {
     color: #0D0D15;
 }
 
-.social-media__link:hover {
+.social-media__link:focus {
     color: #0265DC;
 }
 
 .social-media__item:hover {
-    border-color: #0265DC;
+    scale: 1.1;
 }
 
 .subscribe-container {
@@ -221,8 +249,13 @@ body {
 }
 
 .email-form__input:hover {
-    border-color: blue;
+    border-color: #3892F3;
     cursor: pointer;
+}
+
+.email-form__input:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
 }
 
 .subscribe-blue {
@@ -239,8 +272,11 @@ body {
 }
 
 .subscribe-blue:hover {
-    scale: 1.1;
-    transition: 0.2s;
+    background-color: #3892F3;
+}
+
+.subscribe-blue:focus {
+    outline: 4px solid #3892F3;
 }
 
 .policy {
@@ -266,6 +302,12 @@ body {
 }
 
 .policy__link:hover {
+    color: #3892F3;
+}
+
+.policy__link:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
     color: #0265DC;
 }
 
