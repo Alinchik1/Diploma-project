@@ -1,18 +1,19 @@
 .content {
     background: linear-gradient( 180deg, #F0F6FD 60%, #FFFFFF 100%);
-    padding-top: 64px;
-    padding-left: 80px;
-    padding-right: 80px;
+}
+
+.content__wraper {
     display: flex;
     gap: 40px;
     align-items: flex-end;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .contact {
-    gap: 48px;
+    gap: 40px;
     display: flex;
     flex-direction: column;
+    margin-top: 64px;
 }
 
 .contact-container {
@@ -32,6 +33,15 @@
     line-height: 24px;
 }
 
+.contact-title__name {
+    margin: 0;
+}
+
+.contact-title__header {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 .section__header {
     font-family: 'Plus Jakarta Sans', 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -48,6 +58,8 @@
     line-height: 28px;
     max-width: 618px;
     color: rgba(42, 53, 65, 0.85);
+    margin: 0;
+    margin-bottom: 12px;
 }
 
 .shop-now {
@@ -62,11 +74,19 @@
     line-height: 24px;
     border: none;
     margin-top: 20px;
+    transition: scale 0.3s;
 }
 
 .shop-now:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+.shop-now:active {
+    scale: 1.1;
+    cursor: pointer;
+    background-color: #0054B6;
+
 }
 
 .shop-now:focus {
@@ -75,14 +95,37 @@
 }
 
 .contact-info {
-    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
-.contact-info__text {
+.contact-info__item {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     padding-left: 35px;
+    margin-bottom: 8px;
+}
+
+.contact-info__link {
+    text-decoration: none;
+    color: #0D0D15;
+    padding-left: 8px;
+}
+
+.contact-info__link:hover {
+    color: #3892F3;
+}
+
+.contact-info__link:active {
+    color: #0265DC;
+}
+
+.contact-info__link:focus-within {
+    color: #0265DC;
+    outline: 4px solid #3892F3;
+    border-radius: 8px;
 }
 
 .phone {
@@ -103,7 +146,6 @@
 
 .location-container {
     position: absolute;
-    background-color: #FFFFFF;
     border: none;
     border-radius: 10px;
     width: 347px;
@@ -112,7 +154,7 @@
     box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
     margin-top: 200px;
     margin-left: 220px;
-    background: url(/img/icons/map-pin-icon.svg) left 15px center / 24px 24px no-repeat;
+    background: url(/img/icons/map-pin-icon.svg) left 16px center / 24px 24px no-repeat;
     background-color: #FFFFFF;
     padding: 12px 16px;
 }
@@ -121,8 +163,9 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    margin-left: 36px;
+    margin-left: 44px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .location-container__text {
@@ -130,12 +173,12 @@
     font-size: 16px;
     line-height: 24px;
     color: rgba(42, 53, 65, 0.85);
-    margin-left: 36px;
+    margin-left: 44px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .contact-form {
-    gap: 24px;
     box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
     border-radius: 20px;
     background-color: #FFFFFF;
@@ -145,16 +188,15 @@
 .contact-form__container {
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
+    row-gap: 20px;
     max-width: 588px;
-    margin: 0 auto;
+    margin-bottom: 24px;
 }
 
 .form-control {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
-    margin-bottom: 20px;
+    row-gap: 4px;
 }
 
 .form-control__input {
@@ -233,6 +275,12 @@
     outline: 1px solid #3892F3;
 }
 
+.form-control select:focus {
+    border-color: #3892F3;
+    outline: 4px solid #3892F3;
+    background-color: rgba(41, 77, 117, 0.09);
+}
+
 .textarea {
     resize: none;
     width: 558px;
@@ -248,7 +296,9 @@
 .submit-checkboxes {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .checkbox__span {
@@ -261,11 +311,15 @@
     display: inline-block;
     transition: background .1s;
     cursor: pointer;
-    margin-right: 10px;
+    margin: 5px;
 }
 
 .checkbox__span:hover {
     background-color: #F4F7FA;
+}
+
+.checkbox__span:active {
+    background-color: #B5DEFF;
 }
 
 .checkbox__span::before {
@@ -289,6 +343,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    gap: 4px;
 }
 
 .send-message {
@@ -303,11 +358,16 @@
     line-height: 24px;
     border: none;
     text-wrap: nowrap;
+    transition: scale 0.3s;
 }
 
 .send-message:hover {
     scale: 1.1;
-    transition: 0.2s;
+}
+
+.send-message:active {
+    scale: 1.1;
+    background-color: #0054B6;
 }
 
 .send-message:focus {
