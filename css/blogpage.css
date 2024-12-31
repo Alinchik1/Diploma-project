@@ -106,6 +106,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    transition: font-weight .3s;
 }
 
 .blog-categories__link:hover {
@@ -213,6 +214,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    transition: color .3s;
 }
 
 .figcaption-link:hover {

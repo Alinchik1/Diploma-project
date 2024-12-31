@@ -736,7 +736,7 @@
 }
 
 .faq__details:hover {
-    outline: 4px solid #0265DC;
+    outline: 2px solid #0265DC;
     border-color: #0265DC;
     cursor: pointer;
 }
@@ -753,7 +753,7 @@
 }
 
 .faq__question {
-    width: 510px;
+    width: 620px;
     border-radius: 10px;
     box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
     font-family: 'Plus Jakarta Sans', 'Times New Roman', Times, serif;
@@ -771,7 +771,7 @@
 }
 
 .faq__answer {
-    width: 510px;
+    width: 620px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
