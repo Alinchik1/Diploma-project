@@ -153,6 +153,7 @@
 
 .product__list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 32px;
     margin: 0;
@@ -168,6 +169,7 @@
 
 .categories {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 64px;
     margin-top: 120px;
@@ -176,12 +178,14 @@
 
 .categories-boxes {
     display: flex;
+    flex-wrap: wrap;
     padding-inline: 74px;
     gap: 20px;
 }
 
 .left-categories-boxes, .right-categories-boxes {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -232,6 +236,7 @@
 
 .box__description {
     display: inline-flex;
+    flex-wrap: wrap;
     margin-left: 20px;
     align-items: center;
 }
@@ -295,6 +300,7 @@
 
 .box__description--blue {
     display: inline-flex;
+    flex-wrap: wrap;
     margin-left: 20px;
     align-items: center;
 }
@@ -350,6 +356,7 @@
 
 .trending-title__wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: end;
     margin-bottom: 48px;
@@ -361,6 +368,7 @@
 
 .pages-nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -384,7 +392,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FFFFFF;
-    transition: background-color .3s;
+    transition: background-color .3s, background-image .3s;
 }
 
 .move-left:hover {
@@ -436,6 +444,7 @@
 
 .trending-product-title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     padding-top: 10px;
@@ -487,6 +496,7 @@
 
 .trending-product__description {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 10px;
 }
@@ -568,6 +578,7 @@
 
 .pricing__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     list-style: none;
     margin-top: 48px;
@@ -578,14 +589,13 @@
     box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
     border-radius: 20px;
     margin: 0 auto;
-    transition: translate .3s;
+    transition: transform .3s, border .3s, outline 0.3s;
 }
 
 .pricing__item:hover {
     border: 0px solid #0265DC;
     outline: 2px solid #0265DC;
     transform: translateY(-32px);
-    transition: .3s;
 }
 
 .pricing__item:active {
@@ -644,7 +654,7 @@
     background-color: #FFFFFF;
     border: 2px solid rgba(29, 54, 83, 0.17);
     margin: 40px 32px 32px 32px;
-    transition: background-color .3s;
+    transition: background-color .3s, color .3s, border .3s;
     justify-self: center;
 
 }
@@ -678,6 +688,7 @@
 .faq-container {
     gap: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background: url(/img/icons/faq-background-icon.svg) top 70px center / 689px 498px no-repeat;
     margin-top: 120px;
@@ -698,7 +709,7 @@
     border: 2px solid rgba(29, 54, 83, 0.17);
     margin-top: 16px;
     text-wrap: nowrap;
-    transition: background-color .3s;
+    transition: background-color .3s, border 0.3s;
 }
 
 .faq__button:hover {
@@ -722,6 +733,7 @@
 .faq {
     gap: 16px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     row-gap: 10px;
 }
@@ -792,6 +804,7 @@
 
 .blog-title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 32px;
 }

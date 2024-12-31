@@ -50,6 +50,7 @@
 .side-menu {
     gap: 40px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -74,6 +75,7 @@
     line-height: 20px;
     gap: 12px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -85,7 +87,7 @@
     height: 14px;
     position: relative;
     display: inline-block;
-    transition: background .1s;
+    transition: background-color .1s;
     cursor: pointer;
     margin: 5px;
     margin-right: 9px;
@@ -123,6 +125,7 @@
 .options {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -133,7 +136,7 @@
     width: 14px;
     height: 14px;
     position: absolute;
-    transition: background .1s;
+    transition: background-color .3s;
     cursor: pointer;
     box-sizing: border-box;
     margin: 5px;
@@ -188,7 +191,7 @@
     background-color: rgba(34, 52, 73, 0.4);
     position: relative;
     cursor: pointer;
-    transition: background-color .2s ease;
+    transition: background-color .3s ease;
 }
 
 .form-switcher__box:hover {
@@ -370,6 +373,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .price-range {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 16px;
     font-weight: 400;
@@ -396,7 +400,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
     border: 2px solid rgba(29, 54, 83, 0.17);
     margin-top: 40px;
     background: url(/img/icons/cross-icon.svg) left 30px center / 12px 12px no-repeat;
-    transition: background-color .3s;
+    transition: background-color .3s, border 0.3s;
 }
 
 .clear-all-filter:hover {
@@ -419,6 +423,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .filter-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -455,6 +460,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .selected-filters {
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     align-items: center;
     gap: 24px;
@@ -468,6 +474,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .selected-filters__buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
@@ -500,7 +507,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
     border-radius: 8px;
     width: 40px;
     height: 40px;
-    transition: scale .3s;
+    transition: scale .3s, border-color .3s;
 }
 
 .layout-list-button:hover {
@@ -620,6 +627,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .box__description {
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -657,6 +665,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .price-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
@@ -664,6 +673,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .price-section__buttons {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 8px;
 }
 
@@ -710,6 +720,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 .load-more {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 48px;
