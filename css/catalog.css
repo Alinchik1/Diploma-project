@@ -195,6 +195,10 @@
     background-color: rgba(31, 50, 71, 0.27);
 }
 
+.form-switcher__box:focus-within {
+    outline: 4px solid #3892F3;
+}
+
 .form-switcher__box:active {
     background-color: rgba(42, 53, 65, 0.85);
 }
@@ -238,10 +242,6 @@
 .form-switcher__input:checked + .form-switcher__box:hover {
     background-color: #3892F3;
     border: none;
-}
-
-.form-switcher__input + .form-switcher__box:focus-within {
-    outline: 4px solid #3892F3;
 }
 
 .form-switcher__input:checked + .form-switcher__box::after {
