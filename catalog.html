@@ -13,7 +13,7 @@
     <title>Catalog</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header container">
         <a href="index.html" class="pixmart">
             <svg class="logo-small" width="107" height="24">
                 <use href="/img/icons/sprite.svg#logo-small"></use>
@@ -39,10 +39,12 @@
     </header>
     <main class="content">
         <section class="banner">
-            <h1 class="banner__header">Explore Top</h1>
-            <h2 class="banner__secondary-header"><span class="banner__span">UI Kits</span> Design Assets</h2>     
+            <div class="banner-content container">
+                <h1 class="banner__header">Explore Top</h1>
+                <h2 class="banner__secondary-header"><span class="banner__span">UI Kits</span> Design Assets</h2>     
+            </div>
         </section>
-        <section class="catalog-content">
+        <section class="catalog-content container">
             <div class="side-menu">
                 <form action="#" method="post" class="left-block-filters">
                     <fieldset class="category">
@@ -146,22 +148,19 @@
                             </div>                            
                         </div>
                     </fieldset>
-                    <fieldset class="category">
-                        <legend class="category__header">Price</legend>
-                        <div class="range-category__options">
-                            <label class="options">
-                                <input class="range__input" type="range" min="5" max="50" step="1">
-                            </label>
-                            <div class="price-range">
-                                <span class="min-range__text">€5</span>
-                                <span class="max-range__text">€50</span>
-                            </div>
+                    <div class="range-wrapper">
+                        <label class="category__header">Price</label>
+                        <div class="range-container">
+                          <div class="slider-track"></div>
+                          <input type="range" min="5" max="50" value="20" id="slider-1" oninput="slideOne()">
+                          <input type="range" min="5" max="50" value="40" id="slider-2" oninput="slideTwo()">
                         </div>
-                    </fieldset>
+                        <div class="price-range">
+                            <span class="min-range__text">€5</span>
+                            <span class="max-range__text">€50</span>
+                        </div>
+                    </div>
                     <div class="clear-filters">
-                        <label class="options">
-                            <input class="clear-all-filter" type="reset" name="reset-button" value="Clear all filters">
-                        </label>
                         <button class="clear-all-filter" type="reset">Clear all filters</button>
                     </div>
                 </form>
@@ -193,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="selected-filters">
+                <div class="selected-filters-list">
                     <button class="filter-tag" type="button">UI Kit</button>
                     <button class="filter-tag" type="button">UI Kit</button>
                 </div>
@@ -380,7 +379,7 @@
                             <p class="box__text">Data</p>
                             <p class="box__text-small">Tools</p>
                         </div>
-                        <div class="price-section fade">
+                        <div class="price-section">
                             <p class="price-section__text">€15.99</p>
                             <div class="price-section__buttons">
                                 <button class="heart-button" type="button">
@@ -404,7 +403,7 @@
                             <p class="box__text">Data</p>
                             <p class="box__text-small">Tools</p>
                         </div>
-                        <div class="price-section fade">
+                        <div class="price-section">
                             <p class="price-section__text">€10.99</p>
                             <div class="price-section__buttons">
                                 <button class="heart-button" type="button">
@@ -428,17 +427,19 @@
                             <p class="box__text">Education</p>
                             <p class="box__text-small">Kids</p>
                         </div>
-                        <p class="price fade">€00.00</p>
+                        <div class="price-section">
+                            <p class="price">€00.00</p>
+                        </div>
                     </div>
                 </div>
                 <div class="load-more">
-                    <button class="load-more__button">Load more</button>
+                    <button class="load-more__button" type="button">Load more</button>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <section class="main-footer">
+        <section class="main-footer container">
             <div class="footer-left">
                 <svg class="logo-big" width="300" height="58">
                     <use href="/img/icons/sprite.svg#logo-big"></use>
@@ -481,7 +482,7 @@
                 </div>
             </div>
         </section>
-        <div class="footer-bot">
+        <div class="footer-bot container">
             <div class="social-media">
                 <ul class="social-media__list">
                     <li class="social-media__item">
@@ -517,12 +518,16 @@
             </div>
         </div>
         <div class="policy">
-            <ul class="policy__list">
-                <li class="policy__item"><a href="" class="policy__link">Privacy Policy</a></li>
-                <li class="policy__item"><a href="" class="policy__link">Terms and Conditions</a></li>
-                <li class="policy__item-last"><a href="" class="policy__link">Site Map</a></li>
-            </ul>
-            <p class="copyright__text">Copyright © 2024 Pixmart. All rights reserved.</p>
+            <div class="policy__wraper container">
+                <div class="policy__content">
+                    <ul class="policy__list">
+                        <li class="policy__item"><a href="" class="policy__link">Privacy Policy</a></li>
+                        <li class="policy__item"><a href="" class="policy__link">Terms and Conditions</a></li>
+                        <li class="policy__item-last"><a href="" class="policy__link">Site Map</a></li>
+                    </ul>
+                </div>
+                <p class="copyright__text">Copyright © 2024 Pixmart. All rights reserved.</p>
+            </div>
         </div>
     </footer> 
 </body>

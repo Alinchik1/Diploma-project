@@ -13,7 +13,7 @@
     <title>Homepage</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header container">
         <a href="index.html" class="pixmart">
             <svg class="logo-small" width="107" height="24">
                 <use href="/img/icons/sprite.svg#logo-small"></use>
@@ -39,31 +39,33 @@
     </header>
     <main class="content">
         <section class="banner">
-            <div class="banner-content">
-                <h1 class="banner__header">Craft Your Success with Our <span class="banner__span">Digital</span> Assets</h1>
-                <p class="banner__text">From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources</p>
-                <ul class="banner__list">
-                    <li class="banner__shop-now">
-                        <button class="shop-now" type="button">Shop Now</button>
-                    </li>
-                    <li class="banner__watch">
-                        <button class="watch" type="button">Watch About Us</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="banner-img">
-                <img src="/img/ultimate-platform-banner.webp" alt="The Ultimate Platform for Planning and Promotions Successful Events" class="banner-img__top" width="281" height="422">
-                <img src="/img/jenna-smith-banner.webp" alt="Jenna Smith - Business Strategy and Innovation, Bussiness and Leadership" class="banner-img__right" width="291" height="164">
-                <img src="/img/screens-for-event-banner.webp" alt="Complete Screens for Event & Conference Website" class="banner-img__bot" width="514" height="299">
-                <svg class="pen-icon" width="100" height="100">
-                    <use href="/img/icons/sprite.svg#pen-icon"></use>
-                </svg>
-                <svg class="meter-icon" width="100" height="100">
-                    <use href="/img/icons/sprite.svg#meter-icon"></use>
-                </svg>
+            <div class="banner__wraper container">
+                <div class="banner-content">
+                    <h1 class="banner__header">Craft Your Success with Our <span class="banner__span">Digital</span> Assets</h1>
+                    <p class="banner__text">From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources</p>
+                    <ul class="banner__list">
+                        <li class="banner__shop-now">
+                            <button class="shop-now" type="button">Shop Now</button>
+                        </li>
+                        <li class="banner__watch">
+                            <button class="watch" type="button">Watch About Us</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner-img">
+                    <img src="/img/ultimate-platform-banner.webp" alt="The Ultimate Platform for Planning and Promotions Successful Events" class="banner-img__top" width="281" height="422">
+                    <img src="/img/jenna-smith-banner.webp" alt="Jenna Smith - Business Strategy and Innovation, Bussiness and Leadership" class="banner-img__right" width="291" height="164">
+                    <img src="/img/screens-for-event-banner.webp" alt="Complete Screens for Event & Conference Website" class="banner-img__bot" width="514" height="299">
+                    <svg class="pen-icon" width="100" height="100">
+                        <use href="/img/icons/sprite.svg#pen-icon"></use>
+                    </svg>
+                    <svg class="meter-icon" width="100" height="100">
+                        <use href="/img/icons/sprite.svg#meter-icon"></use>
+                    </svg>
+                </div>
             </div>
         </section>
-        <section class="product">
+        <section class="product container">
             <ul class="product__list">
                 <li class="product__item">
                     <img src="/img/pc-product.png" alt="PC" class="product__img" width="224" height="224">
@@ -87,7 +89,7 @@
                 </li>
             </ul>
         </section>
-        <section class="categories">
+        <section class="categories container">
             <div class="categories-boxes">
                 <div class="left-categories-boxes">
                     <div class="box">
@@ -143,25 +145,28 @@
                 <button class="shop-now" type="button">Shop Now</button>
             </div>
         </section>
-        <section class="trending">
+        <section class="trending container">
             <div class="trending-nav-section">
                 <div class="trending-title">
                     <h2 class="trending-title__name section__name">TRENDING</h2>
-                    <div class="trending-nav-title">
+                    <div class="trending-title__wrap">
                         <h3 class="trending-title__header section__header">Popular Products</h3>
-                    <div class="pages-nav">
-                        <button class="move-left" type="button"><span class="sr-only">Previous</span></button>
-                        <button class="move-right" type="button"><span class="sr-only">Next</span></button>
+                        <div class="pages-nav">
+                            <button class="move-left" type="button"><span class="sr-only">Previous</span></button>
+                            <button class="move-right" type="button"><span class="sr-only">Next</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
             <ul class="trending-product__list">
                 <li class="trending-product__item">
-                    <svg class="cup__icon" width="48" height="48">
-                        <use href="/img/icons/sprite.svg#cup-icon"></use>
-                    </svg>
-                    <button class="trending-product__button" type="button">Go to product</button>
-                    <img src="/img/journeey-product.webp" alt="Exploring, Experiencing" class="product__img" width="305" height="272">
+                    <div class="trending-product__wrap">
+                        <img src="/img/journeey-product.webp" alt="Exploring, Experiencing" class="trending-product__img" width="305" height="272">
+                        <svg class="trending-product__icon" width="48" height="48">
+                            <use href="/img/icons/sprite.svg#cup-icon"></use>
+                        </svg>
+                        <button class="trending-product__button" type="button">Go to product</button>
+                    </div>
                     <div class="trending-product-title">
                         <h4 class="trending-product__header">Travel Hero</h4>
                         <span class="price">€29.99</span>
@@ -172,11 +177,13 @@
                     </div>
                 </li>
                 <li class="trending-product__item">
-                    <svg class="cup__icon" width="48" height="48">
-                        <use href="/img/icons/sprite.svg#cup-icon"></use>
-                    </svg>
-                    <button class="trending-product__button" type="button">Go to product</button>
-                    <img src="/img/medicare-product.webp" alt="Healing Hands" class="product__img" width="305" height="272">
+                    <div class="trending-product__wrap">
+                        <img src="/img/medicare-product.webp" alt="Healing Hands" class="trending-product__img" width="305" height="272">
+                        <svg class="trending-product__icon" width="48" height="48">
+                            <use href="/img/icons/sprite.svg#cup-icon"></use>
+                        </svg>
+                        <button class="trending-product__button" type="button">Go to product</button>
+                    </div>
                     <div class="trending-product-title">
                         <h4 class="trending-product__header">Healthcare Pro</h4> 
                         <span class="price">€15.99</span>
@@ -187,11 +194,13 @@
                     </div>
                 </li>
                 <li class="trending-product__item">
-                    <svg class="cup__icon" width="48" height="48">
-                        <use href="/img/icons/sprite.svg#cup-icon"></use>
-                    </svg>
-                    <button class="trending-product__button" type="button">Go to product</button>
-                    <img src="/img/foodish-product.webp" alt="Enjoy every moment with foodish catering" class="product__img" width="305" height="272">
+                    <div class="trending-product__wrap">
+                        <img src="/img/foodish-product.webp" alt="Enjoy every moment with foodish catering" class="trending-product__img" width="305" height="272">
+                        <svg class="trending-product__icon" width="48" height="48">
+                            <use href="/img/icons/sprite.svg#cup-icon"></use>
+                        </svg>
+                        <button class="trending-product__button" type="button">Go to product</button>
+                    </div>
                     <div class="trending-product-title">
                         <h4 class="trending-product__header">Foodish Delight</h4> 
                         <span class="price">€31.99</span>
@@ -202,11 +211,13 @@
                     </div>
                 </li>
                 <li class="trending-product__item">
-                    <svg class="cup__icon" width="48" height="48">
-                        <use href="/img/icons/sprite.svg#cup-icon"></use>
-                    </svg>
-                    <button class="trending-product__button" type="button">Go to product</button>
-                    <img src="/img/skyhomes-product.webp" alt="Sky Homes - Unlock the Doors to Your Perfect Home" class="product__img" width="305" height="272">
+                    <div class="trending-product__wrap">
+                        <img src="/img/skyhomes-product.webp" alt="Sky Homes - Unlock the Doors to Your Perfect Home" class="trending-product__img" width="305" height="272">
+                        <svg class="trending-product__icon" width="48" height="48">
+                            <use href="/img/icons/sprite.svg#cup-icon"></use>
+                        </svg>
+                        <button class="trending-product__button" type="button">Go to product</button>
+                    </div>
                     <div class="trending-product-title">
                         <h4 class="trending-product__header">Real Estate</h4> 
                         <span class="price">€40.99</span>
@@ -218,57 +229,63 @@
                 </li>
             </ul>
         </section>
-        <section class="pricing">
+        <section class="pricing container">
             <div class="pricing-title">
                 <h2 class="pricing-title__name section__name">PRICING PLAN</h2>
                 <h3 class="pricing-title__header section__header">Choose The Perfect Plan for Creative Potential</h3>
             </div>
             <ul class="pricing__list">
                 <li class="pricing__item">
-                    <div class="pricing__title">
-                        <h4 class="pricing__header">Standard Membership</h4>
-                        <p class="pricing__price">€14.99 <span class="pricing__span">/ Month</span></p>
+                    <div class="pricing__wraper">
+                        <div class="pricing__title">
+                            <h4 class="pricing__header">Standard Membership</h4>
+                            <p class="pricing__price">€14.99 <span class="pricing__span">/ Month</span></p>
+                        </div>
+                        <ul class="pricing__description">
+                            <li class="pricing__text">Enhanced Resourced Access</li>
+                            <li class="pricing__text">Monthly Credits</li>
+                            <li class="pricing__text">Priority Customer Support</li>
+                            <li class="pricing__text">Community Features Access</li>
+                        </ul>
+                        <button class="subscribe-white" type="button">Subscribe</button>
                     </div>
-                    <ul class="pricing__description">
-                        <li class="pricing__text">Enhanced Resourced Access</li>
-                        <li class="pricing__text">Monthly Credits</li>
-                        <li class="pricing__text">Priority Customer Support</li>
-                        <li class="pricing__text">Community Features Access</li>
-                    </ul>
-                    <button class="subscribe-white" type="button">Subscribe</button>
                 </li>
                 <li class="pricing__item">
-                    <svg class="best-seller__icon" width="173" height="40">
-                        <use href="/img/icons/sprite.svg#best-seller-icon"></use>
-                    </svg>
-                    <div class="pricing__title">
-                        <h4 class="pricing__header">Plus Membership</h4>
-                        <p class="pricing__price">€29.99 <span class="pricing__span">/ Month</span></p>
+                    <div class="pricing__wraper">
+                        <svg class="best-seller__icon" width="173" height="40">
+                            <use href="/img/icons/sprite.svg#best-seller-icon"></use>
+                        </svg>
+                        <div class="pricing__title">
+                            <h4 class="pricing__header">Plus Membership</h4>
+                            <p class="pricing__price">€29.99 <span class="pricing__span">/ Month</span></p>
+                        </div>
+                        <ul class="pricing__description">
+                            <li class="pricing__text">All Standard Benefits</li>
+                            <li class="pricing__text">Increased Monthly Credits</li>
+                            <li class="pricing__text">Early Access to New Releases</li>
+                            <li class="pricing__text">Member-Only Offers</li>
+                        </ul>
+                        <button class="subscribe-white" type="button">Subscribe</button>
                     </div>
-                    <ul class="pricing__description">
-                        <li class="pricing__text">All Standard Benefits</li>
-                        <li class="pricing__text">Increased Monthly Credits</li>
-                        <li class="pricing__text">Early Access to New Releases</li>
-                        <li class="pricing__text">Member-Only Offers</li>
-                    </ul>
-                    <button class="subscribe-white" type="button">Subscribe</button>
                 </li>
                 <li class="pricing__item">
-                    <div class="pricing__title">
-                        <h4 class="pricing__header">Pro Membership</h4>
-                        <p class="pricing__price">€44.99 <span class="pricing__span">/ Month</span></p>
+                    <div class="pricing__wraper">
+                        <div class="pricing__title">
+                            <h4 class="pricing__header">Pro Membership</h4>
+                            <p class="pricing__price">€44.99 <span class="pricing__span">/ Month</span></p>
+                        </div>
+                        <ul class="pricing__description">
+                            <li class="pricing__text">All Plus Benefits</li>
+                            <li class="pricing__text">Unlimited Downloads</li>
+                            <li class="pricing__text">Custom Licensing</li>
+                            <li class="pricing__text">Direct Creator Collaboration</li>
+                        </ul>
+                        <button class="subscribe-white" type="button">Subscribe</button>
                     </div>
-                    <ul class="pricing__description">
-                        <li class="pricing__text">All Plus Benefits</li>
-                        <li class="pricing__text">Unlimited Downloads</li>
-                        <li class="pricing__text">Custom Licensing</li>
-                        <li class="pricing__text">Direct Creator Collaboration</li>
-                    </ul>
-                    <button class="subscribe-white" type="button">Subscribe</button>
                 </li>
             </ul>
         </section>
-        <section class="faq-container">
+        <section class="faq-container container">
             <div class="faq-title">
                 <h2 class="faq-title__name section__name">F.A.Q</h2>
                 <h3 class="faq-title__header section__header">Answers to Your Questions</h3>
@@ -284,7 +301,7 @@
                     <p class="faq__answer">Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, andd you'll find all your purchased products ready for download.</p>
                 </details>
                 <details class="faq__details">
-                    <summary class="faq__question">Ae there any discounts for bulk purchases?</summary>
+                    <summary class="faq__question">Are there any discounts for bulk purchases?</summary>
                     <p class="faq__answer">Yes</p>
                 </details>
                 <details class="faq__details">
@@ -297,7 +314,7 @@
                 </details>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog container">
             <div class="blog-title">
                 <h2 class="blog-title__header section-header">Latest Expert</h2>
                 <button class="blog-see-all" type="button">Explore All Articles</button>
@@ -325,7 +342,7 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="main-footer">
+        <section class="main-footer container">
             <div class="footer-left">
                 <svg class="logo-big" width="300" height="58">
                     <use href="/img/icons/sprite.svg#logo-big"></use>
@@ -368,7 +385,7 @@
                 </div>
             </div>
         </section>
-        <div class="footer-bot">
+        <div class="footer-bot container">
             <div class="social-media">
                 <ul class="social-media__list">
                     <li class="social-media__item">
@@ -404,12 +421,16 @@
             </div>
         </div>
         <div class="policy">
-            <ul class="policy__list">
-                <li class="policy__item"><a href="" class="policy__link">Privacy Policy</a></li>
-                <li class="policy__item"><a href="" class="policy__link">Terms and Conditions</a></li>
-                <li class="policy__item-last"><a href="" class="policy__link">Site Map</a></li>
-            </ul>
-            <p class="copyright__text">Copyright © 2024 Pixmart. All rights reserved.</p>
+            <div class="policy__wraper container">
+                <div class="policy__content">
+                    <ul class="policy__list">
+                        <li class="policy__item"><a href="" class="policy__link">Privacy Policy</a></li>
+                        <li class="policy__item"><a href="" class="policy__link">Terms and Conditions</a></li>
+                        <li class="policy__item-last"><a href="" class="policy__link">Site Map</a></li>
+                    </ul>
+                </div>
+                <p class="copyright__text">Copyright © 2024 Pixmart. All rights reserved.</p>
+            </div>
         </div>
     </footer> 
 </body>

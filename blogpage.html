@@ -13,7 +13,7 @@
     <title>Blogpage</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header container">
         <a href="index.html" class="pixmart">
             <svg class="logo-small" width="107" height="24">
                 <use href="/img/icons/sprite.svg#logo-small"></use>
@@ -39,14 +39,16 @@
     </header>
     <main class="content">
         <article class="banner">
-            <p class="banner__tag">TYPOGRAPHY</p>
-            <h1 class="banner__header">Mastering the Art of Typography:</h1>
-            <h2 class="banner__secondary-banner">Tips for Eye-Catching Designs for 2024</h2>
+            <div class="banner__wraper container">
+                <p class="banner__tag">TYPOGRAPHY</p>
+                <h1 class="banner__header">Mastering the Art of Typography:</h1>
+                <h2 class="banner__secondary-banner">Tips for Eye-Catching Designs for 2024</h2>
+            </div>
         </article>
-        <div class="banner__header-image">
+        <div class="banner__header-image container">
             <img src="/img/blog-banner.webp" alt="Best Business Plan Presentation Templates" class="banner__img" width="1280" height="414">
         </div>
-        <div class="blog-container">
+        <div class="blog-container container">
             <aside class="left-container">
                 <div class="profile">
                     <img src="/img/profile-picture.webp" alt="Profile picture of Emma Clarke" class="profile__img" width="60" height="60">
@@ -128,40 +130,42 @@
             </article>
         </div>
         <section class="related-articles">
-            <div class="related-articles__title">
-                <h2 class="related-articles__header">Related Articles</h2>
-                <button class="blog-see-all" type="button">Explore All Articles</button>
-            </div>
-            <div class="blog-articles">
-                <article class="blog-box">
-                    <p class="label-tag">TAG</p>
-                    <img src="/img/best-dishes-blog.webp" alt="The Best Dishes website" class="product__img" width="371" height="272">
-                    <div class="blog-articles__details">
-                        <h3 class="box__header-blog">Best Dishes</h3>
-                        <time datetime="2024-04-15" class="time">15 APRIL 2024</time>
-                    </div>
-                </article>
-                <article class="blog-box">
-                    <p class="label-tag">TAG</p>
-                    <img src="/img/contact-us-blog.webp" alt="Lotus Spa contact us form" class="product__img" width="371" height="272">
-                    <div class="blog-articles__details">
-                        <h3 class="box__header-blog">Contact Us Lotus Spa</h3>
-                        <time datetime="2024-05-05" class="time">5 MAY 2024</time>
-                    </div>
-                </article>
-                <article class="blog-box">
-                    <p class="label-tag">TAG</p>
-                    <img src="/img/creative-blog-blogpage.webp" alt="Be Productive" class="product__img" width="371" height="272">
-                    <div class="blog-articles__details">
-                        <h3 class="box__header-blog">Creative Blog</h3>
-                        <time datetime="2024-06-20" class="time">20 JUNE 2024</time>
-                    </div>
-                </article>
+            <div class="realted-articles__wraper container">
+                <div class="related-articles__title">
+                    <h2 class="related-articles__header">Related Articles</h2>
+                    <button class="blog-see-all" type="button">Explore All Articles</button>
+                </div>
+                <div class="blog-articles">
+                    <article class="blog-box">
+                        <p class="label-tag">TAG</p>
+                        <img src="/img/best-dishes-blog.webp" alt="The Best Dishes website" class="product__img" width="371" height="272">
+                        <div class="blog-articles__details">
+                            <h3 class="box__header-blog">Best Dishes</h3>
+                            <time datetime="2024-04-15" class="time time-blogpage">15 APRIL 2024</time>
+                        </div>
+                    </article>
+                    <article class="blog-box">
+                        <p class="label-tag">TAG</p>
+                        <img src="/img/contact-us-blog.webp" alt="Lotus Spa contact us form" class="product__img" width="371" height="272">
+                        <div class="blog-articles__details">
+                            <h3 class="box__header-blog">Contact Us Lotus Spa</h3>
+                            <time datetime="2024-05-05" class="time time-blogpage">5 MAY 2024</time>
+                        </div>
+                    </article>
+                    <article class="blog-box">
+                        <p class="label-tag">TAG</p>
+                        <img src="/img/creative-blog-blogpage.webp" alt="Be Productive" class="product__img" width="371" height="272">
+                        <div class="blog-articles__details">
+                            <h3 class="box__header-blog">Creative Blog</h3>
+                            <time datetime="2024-06-20" class="time time-blogpage">20 JUNE 2024</time>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section> 
     </main>
     <footer class="footer">
-        <section class="main-footer">
+        <section class="main-footer container">
             <div class="footer-left">
                 <svg class="logo-big" width="300" height="58">
                     <use href="/img/icons/sprite.svg#logo-big"></use>
@@ -204,7 +208,7 @@
                 </div>
             </div>
         </section>
-        <div class="footer-bot">
+        <div class="footer-bot container">
             <div class="social-media">
                 <ul class="social-media__list">
                     <li class="social-media__item">
@@ -240,12 +244,16 @@
             </div>
         </div>
         <div class="policy">
-            <ul class="policy__list">
-                <li class="policy__item"><a href="" class="policy__link">Privacy Policy</a></li>
-                <li class="policy__item"><a href="" class="policy__link">Terms and Conditions</a></li>
-                <li class="policy__item-last"><a href="" class="policy__link">Site Map</a></li>
-            </ul>
-            <p class="copyright__text">Copyright © 2024 Pixmart. All rights reserved.</p>
+            <div class="policy__wraper container">
+                <div class="policy__content">
+                    <ul class="policy__list">
+                        <li class="policy__item"><a href="" class="policy__link">Privacy Policy</a></li>
+                        <li class="policy__item"><a href="" class="policy__link">Terms and Conditions</a></li>
+                        <li class="policy__item-last"><a href="" class="policy__link">Site Map</a></li>
+                    </ul>
+                </div>
+                <p class="copyright__text">Copyright © 2024 Pixmart. All rights reserved.</p>
+            </div>
         </div>
     </footer> 
 </body>
