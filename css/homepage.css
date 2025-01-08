@@ -159,6 +159,37 @@
     list-style: none;
     gap: 32px;
     margin: 0;
+    overflow: auto;
+}
+
+.product__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__item-bg {
+    width: 224px;
+    height: 224px;
+}
+
+.pc {
+    background: url(/img/pc-product.webp) top / 224px 224px no-repeat;
+}
+
+.mobile {
+    background: url(/img/mobile-product.webp) top / 224px 224px no-repeat;
+}
+
+.graf {
+    background: url(/img/presentation-product.webp) top / 224px 224px no-repeat;
+}
+
+.letters {
+    background: url(/img/fonts-product.webp) top / 224px 224px no-repeat;
+}
+
+.painting {
+    background: url(/img/illustrations-product.webp) top / 224px 224px no-repeat;
 }
 
 .product__text {
@@ -167,6 +198,8 @@
     font-size: 20px;
     line-height: 28px;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .categories {
