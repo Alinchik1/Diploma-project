@@ -43,10 +43,13 @@
 .banner__list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     gap: 24px;
     padding: 0;
     margin: 0;
+}
+
+.banner__shop-now {
+    text-wrap: nowrap;
 }
 
 .shop-now {
@@ -153,7 +156,6 @@
 
 .product__list {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     gap: 32px;
     margin: 0;
@@ -169,7 +171,6 @@
 
 .categories {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 64px;
     margin-top: 120px;
@@ -178,7 +179,6 @@
 
 .categories-boxes {
     display: flex;
-    flex-wrap: wrap;
     padding-inline: 74px;
     gap: 20px;
 }
@@ -435,10 +435,13 @@
     gap: 16px;
     margin: 0;
     padding: 0;
+    overflow: auto;
+    min-width: 305px;
 }
 
 .trending-product__item {
     flex-grow: 1;
+    min-width: 305px;
 }
 
 
@@ -577,8 +580,8 @@
 }
 
 .pricing__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     list-style: none;
     margin-top: 48px;
@@ -588,7 +591,6 @@
 .pricing__item {
     box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
     border-radius: 20px;
-    margin: 0 auto;
     transition: transform .3s, border .3s, outline 0.3s;
 }
 
@@ -688,7 +690,6 @@
 .faq-container {
     gap: 40px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     background: url(/img/icons/faq-background-icon.svg) top 70px center / 689px 498px no-repeat;
     margin-top: 120px;
